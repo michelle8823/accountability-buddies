@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width= device-width, initial-scale = 1">
+        <!-- CSS stylesheet -->
+        <link rel = "stylesheet" href = "sass/style.css">
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Accountability Buddies</title>
+    </head>
+    <body>
+        <!-- Bootstrap Nav bar-->
+        <nav class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+        </nav>
+        <!-- Contact section -->
+        <div class = "container-contact">
+            <h1>Contact</h1>
+        </div>
+        <div class = "contact">
+            <p>Please let us know if you have any issues or feedback for accountability buddies</p>
+            <form id = "contact-form">
+                <div class = "info">
+                    <!-- Personal Details-->
+                    <div class = "fields">
+                        <label id =  "name-label">* Name: </label><input id = "name" type = "text" required placeholder = "John Doe"></input><br>
+                        <label id =  "email-label"> * Email: </label><input id = "email" type = "email" required placeholder = "example@gmail.com"></input><br>
+                        <label id =  "contact-label">&nbsp;&nbsp;&nbsp;Contact Number: </label><input id = "contact" type = "text" placeholder = "0400000000"></input><br>
+                    </div>
+                    <!-- Message -->
+                    <div class = "fields">
+                        <br>
+                        <label id = "comments">Enter your message here: </label><br>
+                            <textarea id="comment-box" class="input-field" name="comments" placeholder="Let us know how we can improve <3"></textarea>
+                    </div>
+                    <!-- Submit button -->
+                    <br><br>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

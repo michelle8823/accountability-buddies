@@ -1,0 +1,272 @@
+/* sass variables */
+/* html settings */
+html {
+  scroll-behavior: smooth;
+}
+
+/* body styling */
+body {
+  margin: 0;
+  font-family: "Asap", sans-serif;
+}
+
+/* Text selection bg color - https://css-tricks.com/overriding-the-default-text-selection-color-with-css */
+::selection {
+  background: #dce6f1;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #95beeb;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b8cae0;
+}
+
+/* Styling for header of each page */
+.container-blog, .container-faq, .container-contact {
+  width: 100%;
+  background: linear-gradient(90deg, #b5a2c6 0%, #94bbe9 100%);
+  min-height: 250px;
+  padding-top: 7%;
+}
+.container-blog h1, .container-faq h1, .container-contact h1 {
+  color: #fff;
+}
+
+/* Styling for all buttons */
+.contact button, #join button {
+  float: right;
+  border: none;
+  padding: 1%;
+  margin: 1%;
+  width: 20%;
+  background-color: #b8cae0;
+  border-radius: 17px;
+  color: #fff;
+}
+
+.contact button:hover, #join button:hover {
+  transition: 0.5s;
+  background-color: #c9d7e9;
+}
+
+/* Nav bar */
+.nav {
+  z-index: 9999;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+}
+
+.nav > li {
+  padding-right: 7%;
+}
+
+.nav-link {
+  color: #80abdd;
+}
+
+/* Home section */
+.container-home {
+  width: 100%;
+  background: linear-gradient(90deg, #b5a2c6 0%, #94bbe9 100%);
+  min-height: 280px;
+  height: auto;
+  padding-top: 10%;
+}
+.container-home h1 {
+  margin-top: -5%;
+  font-size: 50px;
+}
+
+.home h1, .home p {
+  padding: 2%;
+  color: #fff;
+  text-align: center;
+}
+.home p {
+  margin-top: -2%;
+}
+
+.home-body {
+  width: 80%;
+  margin-left: 20%;
+  padding: 2%;
+}
+
+#home-img {
+  width: 25%;
+}
+
+#join {
+  margin-top: 3%;
+  display: inline-block;
+  color: #80abdd;
+}
+#join p {
+  font-size: 17px;
+}
+#steps {
+  width: 80%;
+  margin-top: 5%;
+}
+#steps .row .col-3 {
+  margin: 4%;
+  padding: 1%;
+  border-radius: 10px;
+  color: #80abdd;
+}
+#steps .row .col-3 h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #b5a2c6;
+}
+#steps .row .col-3 h3 {
+  font-weight: lighter;
+  font-size: 24px;
+}
+#steps .row .col-3 p {
+  color: #80abdd;
+}
+
+/* Blog section */
+.container-blog h1, .container-faq h1, .container-contact h1 {
+  margin-left: 80%;
+  font-size: 28px;
+}
+
+.blog, .faq, .contact {
+  color: #80abdd;
+  padding: 5%;
+  margin-left: 12.6% !important;
+  margin-top: -4% !important;
+  width: 75%;
+  background-color: #fff !important;
+  border: 1px solid #d9e2ee;
+  text-align: justify;
+}
+.blog .blog-post, .faq .blog-post, .contact .blog-post {
+  width: 95%;
+  color: #5184c7;
+}
+.blog .blog-post table, .blog .blog-post td, .blog .blog-post th, .faq .blog-post table, .faq .blog-post td, .faq .blog-post th, .contact .blog-post table, .contact .blog-post td, .contact .blog-post th {
+  color: #5184c7;
+  padding: 1%;
+  border: 1px solid #d9e2ee;
+}
+
+.col-9 img {
+  width: 70%;
+}
+.col-9 h2 {
+  font-size: 30px;
+}
+.col-9 .date {
+  margin-left: 4px;
+  font-size: 14px;
+  color: #b8cae0;
+}
+
+/* Social media icons */
+.social .fa {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 2%;
+  color: #80abdd;
+}
+.social .fa:hover {
+  color: #c3a6d6;
+  transition: 0.6s;
+}
+.social .p {
+  font-size: 17px;
+}
+
+.recent-posts {
+  margin-top: 25%;
+}
+.recent-posts h2 {
+  font-size: 24px;
+}
+.recent-posts li {
+  text-align: left;
+}
+.recent-posts ul a {
+  text-decoration: none;
+  color: #94bcdf;
+}
+.recent-posts ul a:hover {
+  transition: 0.6s;
+  color: #c3a6d6;
+}
+
+/* FAQ section */
+.faq h2 {
+  font-size: 26px;
+}
+.faq p {
+  color: #5184c7;
+  margin-bottom: 5%;
+}
+
+/* Contact */
+.contact .fields > label {
+  color: #5184c7;
+}
+.contact #contact-form {
+  padding-top: 5%;
+}
+.contact button {
+  float: left;
+}
+input[type=text], input[type=email] {
+  width: 20%;
+  min-height: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #5184c7;
+  font-size: 16px;
+  padding: 4px;
+}
+
+::placeholder {
+  padding-left: 2%;
+  color: #b8cae0;
+}
+
+#comment-box {
+  border-radius: 5px;
+  margin-top: -0.5%;
+  width: 70%;
+  min-height: 120px;
+}
+
+/* Media queries */
+@media (max-width: 800px) {
+  .home h1 {
+    margin-top: 1%;
+  }
+
+  #steps .row .col-3 h3 {
+    font-size: 19px;
+  }
+
+  .recent-posts {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .container-blog h1, .container-faq h1, .container-contact h1 {
+    margin-top: 9%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
